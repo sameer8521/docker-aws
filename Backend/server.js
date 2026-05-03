@@ -33,12 +33,12 @@ io.on("connection", (socket) => {
   });
 });
 
-// ✅ Basic route
+//  Basic route
 app.get("/", (req, res) => {
   res.send(" Backend is running");
 });
 
-// ✅ Start server ONLY ONCE
+//  Start server ONLY ONCE
 const PORT = 5000;
 server.listen(PORT, () => {
   console.log(` Server running on http://localhost:${PORT}`);
